@@ -1,0 +1,98 @@
+﻿@{
+    ViewData["Title"] = "About TechHive";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-8 col-xl-7">
+
+        <div class="card shadow-sm border-0 mt-4 about-card">
+            <div class="card-header bg-dark text-light d-flex align-items-center">
+                <h2 class="mb-0">
+                    About <span class="brand-name">TechHive 🐝</span>
+                </h2>
+            </div>
+
+            <div class="card-body">
+
+                <p class="lead">
+                    <span class="brand-name">TechHive</span> is a modern AI-powered support experience built for the future of e-commerce.
+                </p>
+
+                <hr />
+
+                <h5>Our Mission</h5>
+                <p>
+                    We believe customer support should be fast, smart, and available 24/7 — without waiting in a queue.
+                    <span class="brand-name">TechHive</span> uses advanced AI to provide accurate responses based on real product and policy data.
+                </p>
+
+                <h5 class="mt-4">What This App Demonstrates</h5>
+                <p>
+                    This demo project showcases:
+                </p>
+                <ul>
+                    <li>Clean <strong>ASP.NET Core MVC</strong> application structure.</li>
+                    <li>Integration with the <strong>OpenAI API</strong> for intelligent responses.</li>
+                    <li>A modern, chat-style UI for AI conversations (bubbles, avatars, live messages).</li>
+                    <li>Usage of a SQL database for products, FAQs, and store configuration.</li>
+                </ul>
+
+                <h5 class="mt-4">Why <span class="brand-name">TechHive</span>?</h5>
+                <p>
+                    Just like a hive works efficiently with smart coordination,
+                    <span class="brand-name">TechHive</span> connects human questions with AI assistance —
+                    helping users get the right answers quickly and clearly.
+                </p>
+
+                <blockquote class="p-3 rounded bg-light text-secondary fst-italic">
+                    “Support shouldn’t be complicated — just helpful, fast, and available when needed.”
+                </blockquote>
+
+                <h5 class="mt-4">For Recruiters & Teams</h5>
+                <p>
+                    This application is designed as a portfolio-style demo to highlight:
+                </p>
+                <ul>
+                    <li>Backend skills with .NET and Entity Framework Core.</li>
+                    <li>Frontend skills with Bootstrap and custom UI styling.</li>
+                    <li>Working with real-time communication using SignalR.</li>
+                    <li>Practical AI integration and prompt design for a real-world use case.</li>
+                </ul>
+
+                <h5 class="mt-4">Contact</h5>
+                <p>
+                    Have suggestions or want to extend <span class="brand-name">TechHive</span>?
+                    You can customize this section with your real contact details, for example:
+                    <a href="mailto:support@techhive.com">support@techhive.com</a>.
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <style>
+        .about-card {
+            border-radius: 18px;
+        }
+
+            .about-card h5 {
+                font-weight: 600;
+            }
+
+            .about-card ul {
+                padding-left: 1.2rem;
+            }
+
+        blockquote {
+            border-left: 4px solid #ffc107;
+        }
+
+        /* نفس لون البراند في الـ navbar */
+        .brand-name {
+            color: #ffc107;
+            font-weight: 600;
+        }
+    </style>
+}

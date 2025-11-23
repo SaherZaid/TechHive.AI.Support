@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Welcome to TechHive";
+}
+
+<div class="hero-section text-center py-5">
+    <h1 class="display-4 fw-bold mb-3">
+        Welcome to <span class="text-warning">TechHive🐝</span>
+    </h1>
+    <p class="lead text-muted mb-4">
+        Your smart AI-powered customer support experience.<br />
+        Ask anything about our products, shipping, or returns and get instant answers.
+    </p>
+
+    <a asp-controller="Chat" asp-action="Index" class="btn btn-warning btn-lg fw-bold px-5 py-3 shadow">
+        Start Chatting 🤖
+    </a>
+</div>
+
+<section class="features container mt-5">
+    <div class="row text-center">
+        <div class="col-md-4 mb-4">
+            <div class="feature-box shadow-sm p-4 rounded">
+                <h5 class="fw-bold">🚀 Fast Responses</h5>
+                <p class="text-muted">Get instant AI-generated support anytime, anywhere.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="feature-box shadow-sm p-4 rounded">
+                <h5 class="fw-bold">🔍 Smart Knowledge</h5>
+                <p class="text-muted">Answers are based on TechHive policies and product data.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="feature-box shadow-sm p-4 rounded">
+                <h5 class="fw-bold">💬 Natural Conversation</h5>
+                <p class="text-muted">Feels like chatting with a real support agent.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta text-center mt-5 mb-5">
+    <h4 class="fw-semibold mb-3">Ready to try it?</h4>
+    <p class="text-muted mb-4">Click below to start your conversation.</p>
+    <a asp-controller="Chat" asp-action="Index" class="btn btn-outline-warning px-4 py-2 fw-semibold">
+        Try the AI Assistant
+    </a>
+</section>
+
+@section Scripts {
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #1e1e1e, #2b3035);
+            color: #fff;
+            border-radius: 18px;
+            padding: 60px 20px;
+        }
+
+        .feature-box {
+            transition: 0.2s;
+            background: #fff;
+        }
+
+            .feature-box:hover {
+                transform: translateY(-6px);
+                background: #fff8d6;
+            }
+
+        .cta {
+            padding-bottom: 40px;
+        }
+    </style>
+}
